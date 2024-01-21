@@ -1,0 +1,30 @@
+import { Callout } from "nextra-theme-docs"
+import YouTube from "../../components/youtube"
+
+# Stable Diffusion
+
+<Callout type="info" emoji="ℹ️">
+  This model is very large, please specify its name at startup so that the model
+  can be fully downloaded on the first launch. This way, there will be no issues
+  when switching on the website in the future.
+</Callout>
+
+- `--model sd1.5`: https://github.com/runwayml/stable-diffusion
+- `--model sd2`: https://github.com/Stability-AI/stablediffusion
+- `--model anything4`: huggingface.co/andite/anything-v4.0
+- `--model realisticVision1.4`: huggingface.co/SG161222/Realistic_Vision_V1.4
+
+You can use Stable Diffusion to replace objects in the picture base on a text prompt.
+
+<YouTube youTubeId="VrV1Cixvc2Q" />
+
+## Erase object
+
+Stable Diffusion can also be used for "normal" inpainting(erase object from picture), here is some example using **background** as prompt:
+
+<YouTube youTubeId="pwQ8zBdkg0I" />
+
+## Load local ckpt/safetensors
+
+You can learn how to create a inpainting model from **any** diffusion model in AUTO1111's webui [here](https://www.reddit.com/r/StableDiffusion/comments/zyi24j/how_to_turn_any_model_into_an_inpainting_model/).
+

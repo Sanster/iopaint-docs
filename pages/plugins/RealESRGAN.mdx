@@ -1,0 +1,29 @@
+# RealESRGAN
+
+[RealESRGAN](https://github.com/xinntao/Real-ESRGAN) is a library to do image Super-Resolution.
+
+![realesrgan](../../public/realesrgan_demo.jpeg)
+
+Install dependency package:
+
+```bash
+pip install realesrgan
+```
+
+Command line argument to enable RealESRGAN:
+
+```bash
+--enable-realesrgan --realesrgan-model RealESRGAN_x4plus --realesrgan-device cuda
+```
+
+Available models:
+
+1. RealESRGAN_x4plus: for general scenes
+1. RealESRGAN_x4plus_anime_6B: optimized for anime images with much smaller model size.
+1. realesr-general-x4v3: a tiny small model for general scenes
+
+Available device:
+
+1. cuda
+1. cpu
+1. mps

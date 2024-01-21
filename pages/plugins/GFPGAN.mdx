@@ -1,0 +1,25 @@
+# GFPGAN
+
+[GFPGAN](https://github.com/TencentARC/GFPGAN) is a library to do face restoration.
+
+| Original                                |              GFPGAN Result              |
+| :-------------------------------------- | :-------------------------------------: |
+| ![old_gfpgan](../../public/gfpgan_old.jpg) | ![new_gfpgan](../../public/gfpgan_new.jpg) |
+
+Install dependency package:
+
+```bash
+pip install gfpgan
+```
+
+Command line argument to enable GFPGAN:
+
+```bash
+--enable-gfpgan --gfpgan-device cuda
+```
+
+Available device:
+
+1. cuda
+2. cpu
+3. mps

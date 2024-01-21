@@ -1,0 +1,23 @@
+import YouTube from "../../components/youtube"
+
+
+## Interactive Segmentation
+
+[Segment Anything Model](https://github.com/facebookresearch/segment-anything) can produce high quality object masks from user click.
+
+Command line argument to enable Interactive Segmentation Plugin:
+
+```bash
+--enable-interactive-seg --interactive-seg-model=vit_l  --interactive-seg-device=cuda
+```
+
+The basic operation process is as follows:
+
+- Toggle `Interactive Segmentation` mode
+- Left click(positive) on the image to select things you want to mask
+- Right click(negative) on the image to exclude things you don't want to mask
+- Click `Accept`
+- Complete the mask with the brush (If the result of interactive segmentation is not good)
+- Inpainting!
+
+<YouTube youTubeId="oLYNGFDI4dc" />

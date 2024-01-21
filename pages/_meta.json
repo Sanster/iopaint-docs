@@ -1,0 +1,12 @@
+{
+  "index": "Introduction",
+  "install": "Install",
+  "models": "Models",
+  "features": "Features",
+  "plugins": "Plugins",
+  "memory": "Memory",
+  "---": {
+    "type": "separator"
+  },
+  "frequently_asked_questions": "Frequently Asked Questions"
+}

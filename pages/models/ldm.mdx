@@ -1,0 +1,16 @@
+# High-Resolution Image Synthesis with Latent Diffusion Models
+
+- `--model ldm`
+- github: https://github.com/CompVis/latent-diffusion
+- paper: https://arxiv.org/abs/2112.10752
+
+## LDM vs LaMa
+
+- 👍 Possible to get better and more detailed result than LaMa
+- 👍 The balance of time and quality can be achieved by adjusting `steps`
+- 😐 Much slower than LaMa model (3080 12it/s)
+- 😐 Need more GPU memory (512x512 5.8G)
+
+| Original Image                                                                                                                            | LaMa                                                                                                                                                   | LDM                                                                                                                                                   |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![photo-1583445095369-9c651e7e5d34](https://user-images.githubusercontent.com/3998421/156923525-d6afdec3-7b98-403f-ad20-88ebc6eb8d6d.jpg) | ![photo-1583445095369-9c651e7e5d34_cleanup_lama](https://user-images.githubusercontent.com/3998421/156923620-a40cc066-fd4a-4d85-a29f-6458711d1247.png) | ![photo-1583445095369-9c651e7e5d34_cleanup_ldm](https://user-images.githubusercontent.com/3998421/156923652-0d06c8c8-33ad-4a42-a717-9c99f3268933.png) |

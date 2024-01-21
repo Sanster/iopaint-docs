@@ -1,0 +1,26 @@
+# Models
+
+IOPaint support many AI inpainting models out of the box. These models can be categorized into three groups:
+
+## Erase
+
+The following models can be used to erase objects, persons or text in any picture(except Manga model, it's trained for manga images).
+Depending on the model structure, each model has its characteristics.
+Most of the time I use the `LaMa` model, and I suggest you try them all to see which one suits your scene.
+
+- [LaMa](models/lama)
+- [LDM](models/ldm)
+- [ZITS](models/zits)
+- [MAT](models/mat)
+- [FcF](models/fcf)
+- [Manga](models/manga)
+- [Stable Diffusion](models/stable_diffusion): Yes, Stable Diffusion can do "normal" inpainting!
+
+## Erase and Replace
+
+- [Stable Diffusion](models/stable_diffusion): replace objects in the picture base on a text description, support different stable diffusion models.
+- [Paint by Example](models/paint_by_example): use an example image to guide the model to generate similar content on the image.
+
+## Picture Editing
+
+- [InstructPix2Pix](models/instruct_pix2pix): use a text description to edit the picture.

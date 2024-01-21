@@ -1,0 +1,15 @@
+import { Callout } from "nextra-theme-docs"
+
+# pip
+
+You can install and start IOPaint easily by running following command:
+
+
+```shell
+# In order to use the GPU, install cuda version of pytorch first.
+pip3 install torch==2.1.2 torchvision==0.16.2 --index-url https://download.pytorch.org/whl/cu118
+pip3 install iopaint
+iopaint start --model=lama --device=cpu --port=8080
+```
+
+IOPaint is now running at http://localhost:8080, you can open it in your browser to start using it.

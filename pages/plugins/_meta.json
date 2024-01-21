@@ -1,0 +1,8 @@
+{
+  "interactive_seg": "Interactive Segmentation",
+  "GFPGAN": "GFPGAN",
+  "RealESRGAN": "RealESRGAN",
+  "rembg": "Remove Background",
+  "RestoreFormer": "RestoreFormer",
+  "anime_seg": "Anime Segmentation"
+}
