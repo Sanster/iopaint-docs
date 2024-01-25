@@ -1,0 +1,37 @@
+import { Steps } from 'nextra/components'
+
+
+# Install
+
+You can install and start IOPaint easily by following steps:
+
+<Steps>
+### Install pytorch
+
+If you possess a GPU, it is necessary to install the GPU version of PyTorch beforehand. Otherwise, you can skip this step.
+
+For NVIDIA GPU users
+```bash
+pip3 install torch==2.1.2 torchvision==0.16.2 --index-url https://download.pytorch.org/whl/cu118
+```
+
+For AMD GPU users, only works on linux, as pytorch is not yet supported on Windows with ROCm.
+```bash
+pip3 install torch==2.1.2 torchvision==0.16.2 --index-url https://download.pytorch.org/whl/rocm5.6
+```
+ 
+### Install IOPaint
+ 
+```bash
+pip3 install iopaint
+```
+
+### Start IOPaint server
+
+```bash
+iopaint start --model=lama --device=cpu --port=8080
+```
+
+IOPaint is now running at http://localhost:8080, you can open it in your browser to start using it.
+
+</Steps>

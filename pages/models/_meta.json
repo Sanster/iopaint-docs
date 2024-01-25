@@ -1,10 +1,5 @@
 {
-  "lama": "LaMa",
-  "ldm": "LDM",
-  "zits": "ZITS",
-  "mat": "MAT",
-  "fcf": "FcF",
-  "manga": "Manga",
-  "stable_diffusion": "Stable Diffusion",
-  "paint_by_example": "Paint By Example"
+  "erase": "Erase",
+  "diffusion": "Diffusion",
+  "stable_diffusion": "Stable Diffusion"
 }
