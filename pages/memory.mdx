@@ -2,16 +2,12 @@
 
 If CUDA OOM happens to you, in addition to reducing the size of your images, the following suggestions might be helpful:
 
-## LaMa/LDM/ZITS/MAT/FcF/Manga
+## Erase Model
 
 - Use `--device cpu`
 
-## Stable Diffusion
+## Stable Diffusion Model
 
-- Add `--sd-disable-nsfw` and `--sd-cpu-textencoder` to the command line
+- Add `--disable-nsfw-checker` and `--cpu-textencoder` to the command line
 - Add `--cpu-offload`(save more GPU memory but much slower) to the command line
-  - fp16: 512x512 image needs 2GB GPU memory
-  - no_half: 512x512 image needs 3GB GPU memory
-- Add `--cpu-offload`(save more GPU memory but much slower) to the command line
-  - fp16: 512x512 image needs 2.6GB GPU memory
-  - no_half: 512x512 image needs 4.5GB GPU memory
+- Enable `Cropper` in the web user interface to only apply inpainting on part of image.
