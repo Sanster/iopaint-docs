@@ -3,6 +3,7 @@
   "install": "Install",
   "models": "Models",
   "file_manager": "File Manager",
+  "batch_process": "Batch Process",
   "plugins": "Plugins",
   "memory": "Memory",
   "---": {

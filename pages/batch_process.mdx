@@ -1,0 +1,8 @@
+# Batch Process using CLI
+
+You can use the `iopaint run` command to process images in bulk. Execute `iopaint run --help` to view all help information.
+
+- `--image`: Image folders or image file path
+- `--mask`: Mask folders or file path. If it is a directory, the mask images in the directory should have the same name as the original image. 
+If it is a file, all images will use this mask.Mask will automatically resize to the same size as the original image.
+- `--output`: Output directory or file path
