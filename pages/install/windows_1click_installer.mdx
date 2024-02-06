@@ -1,4 +1,4 @@
-import { Callout } from "nextra-theme-docs"
+import { Steps } from 'nextra/components'
 
 ## Windows 1-Click Installer
 
@@ -10,9 +10,24 @@ You can always install IOPaint for free through pip, or purchase this 1-click in
 - A web interface for server start configuration
 - Easy to receive all future upgrades
 
+<Steps>
 ### Download Installer
 
-I am still working on creating this installer. 
+Get the installer at [here](https://panicbyte.lemonsqueezy.com/checkout/buy/8bb260b9-b650-4748-8dd8-b27f6fa0aa0e)
 
-Lama Cleaner is the predecessor of IOPaint. You can first purchase its [installer](https://lama-cleaner-docs.vercel.app/install/windows_1click_installer) to experience some functionalities of IOPaint,
-and download the new version after the installer of IOPaint is released.
+### Configure
+
+Unzip the package, you will get a `win_config.bat` and a `win_start.bat` file.
+
+Double click `win_config.bat`, it will take a few minutes to install all the dependencies, and open the web config page in your browser.
+You can config all command line args in the web page, such as the path to download the model, whether to save vRAM(CPU Offload), etc.
+Click the `Save configurations` button will save an `installer_config.json` file in the same directory.
+
+![web_config_page](../../public/web_config_page.png)
+
+### Start IOPaint
+
+Double click `win_start.bat` to start the server, the first time it takes a few minutes to download the model.
+
+</Steps>
+
