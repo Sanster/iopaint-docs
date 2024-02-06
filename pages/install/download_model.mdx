@@ -3,9 +3,12 @@
 IOPaint will automatically download the model when the service starts. 
 If you encounter any issues during the download (such as network proxy problems), 
 you can manually download the model and place it in the specified directory. 
-By default IOPaint will download model to `~/.cache/torch/hub/checkpoints/`, so you also need to put the model in this directory.
 
-If you want change model dir and add using command line arg `--model-dir=xxxx`.
+If you want change model dir using command line arg `--model-dir=xxxx`.
+
+## Erase models
+By default IOPaint will download erase model to `~/.cache/torch/hub/checkpoints/`, so you also need to put the model in this directory.
+
 
 - GitHub:
   - [LaMa](https://github.com/Sanster/models/releases/tag/add_big_lama)
@@ -17,3 +20,7 @@ If you want change model dir and add using command line arg `--model-dir=xxxx`.
 - Baidu:
   - https://pan.baidu.com/s/1vUd3BVqIpK6e8N_EA_ZJfw
   - passward: flsu
+
+## Diffusion
+
+By default IOPaint will download diffusion model to `~/.cache/huggingface/hub/`
