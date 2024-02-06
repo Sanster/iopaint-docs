@@ -26,6 +26,7 @@ Some other popular models include:
 
 - [runwayml/stable-diffusion-inpainting](https://huggingface.co/runwayml/stable-diffusion-inpainting)
 - [diffusers/stable-diffusion-xl-1.0-inpainting-0.1](https://huggingface.co/diffusers/stable-diffusion-xl-1.0-inpainting-0.1)
+- [diffusionbee/fooocus_inpainting](https://huggingface.co/diffusionbee/fooocus_inpainting)
 - [andregn/Realistic_Vision_V3.0-inpainting](https://huggingface.co/andregn/Realistic_Vision_V3.0-inpainting)
 - [Lykon/dreamshaper-8-inpainting](https://huggingface.co/Lykon/dreamshaper-8-inpainting)
 - [Sanster/anything-4.0-inpainting](https://huggingface.co/Sanster/anything-4.0-inpainting)
@@ -40,8 +41,37 @@ Please refer to [Download Model](install/download_model) for instructions on how
 ```
 - model_dir 
   |- stable_diffusion
+      ├── sd-v1-5-inpainting.ckpt
+      ├── sd-v1-5-inpainting.safetensors
+      └── v1-5-pruned-emaonly.safetensors
   |- stable_diffusion_xl
+      ├── sd_xl_base_1.0.safetensors
+      └── sd_xl_base_1.0_inpainting_0.1.safetensors
 ```
+
+### Load local diffusers model
+
+You can use the [convert_original_stable_diffusion_to_diffusers.py](https://github.com/huggingface/diffusers/blob/main/scripts/convert_original_stable_diffusion_to_diffusers.py) script to 
+convert single file ckpt/safetensors into diffusers format. And put the converted model directory into the `model_dir/stable_diffusion` or `model_dir/stable_diffusion_xl` directory.
+The benefit of this is that it eliminates the time required for model conversion when loading a single file, and also saves memory during service startup. 
+The drawback is that the converted model directory may occupy more disk space. Here is an example of directory structure:
+
+```
+- model_dir 
+  |-stable_diffusion_xl
+    ├── converted_sdxl
+    │   ├── model_index.json
+    │   ├── scheduler
+    │   ├── text_encoder
+    │   ├── text_encoder_2
+    │   ├── tokenizer
+    │   ├── tokenizer_2
+    │   ├── unet
+    │   └── vae
+    ├── sd_xl_base_1.0.safetensors
+    └── sd_xl_base_1.0_inpainting_0.1.safetensors
+```
+
 
 ### Cropper
 
