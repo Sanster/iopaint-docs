@@ -15,15 +15,25 @@ You can always install IOPaint for free through pip, or purchase this 1-click in
 
 Get the installer at [here](https://panicbyte.lemonsqueezy.com/checkout/buy/8bb260b9-b650-4748-8dd8-b27f6fa0aa0e)
 
-### Configure
+### Configuration
 
-Unzip the package, you will get a `win_config.bat` and a `win_start.bat` file.
-
-Double click `win_config.bat`, it will take a few minutes to install all the dependencies, and open the web config page in your browser.
-You can config all command line args in the web page, such as the path to download the model, whether to save vRAM(CPU Offload), etc.
+Unzip the package, you will get a `win_config.bat` and a `win_start.bat` file. 
+Double click `win_config.bat`, it will take a few minutes to install all the dependencies, and open the web config page in your browser. 
+You can config all command line args in the web config page, such as select server start model, model download directory, etc. 
 Click the `Save configurations` button will save an `installer_config.json` file in the same directory.
 
-![web_config_page](../../public/web_config_page.png)
+### Model Select
+
+![model_select](../../public/model_select.png)
+
+You can enter the model name in "Current Model", including the models mentioned in [models](https://www.iopaint.com/models) 
+or other Stable Diffusion/Stable Diffusion XL model id on HuggingFace, for example, "diffusionbee/fooocus_inpainting".
+
+You can also choose from "Recommended Models" or "Downloaded Models", once selected, it will automatically populate in the "Current Model".
+
+Model will be automatically downloaded the first time it is used.
+
+IOPaint also supports loading local single file [ckpt/safetensors](https://www.iopaint.com/models#load-ckptsafetensors).
 
 ### Start IOPaint
 
