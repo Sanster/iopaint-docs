@@ -1,3 +1,4 @@
+import { Callout } from "nextra-theme-docs"
 import { Steps } from 'nextra/components'
 
 
@@ -34,6 +35,12 @@ iopaint start --model=lama --device=cpu --port=8080
 
 IOPaint is now running at http://localhost:8080, you can open it in your browser to start using it.
 
-You can see more models and features in the [models](models/) page.
+You can see all command line arguments using `iopaint start --help`, and you can see more models and features in the [models](models/) page.
+
+<Callout type="info" emoji="ℹ️️">
+    You can also use `iopaint start-web-config --config-file iopaint-config.json` to start a gradio page for configuration settings, 
+    the configuration will be saved in iopaint-config.json, and then use `iopaint start --config iopaint-config.json` to start the service.
+</Callout>
+
 
 </Steps>
