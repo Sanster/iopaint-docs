@@ -24,3 +24,11 @@ By default IOPaint will download erase model to `~/.cache/torch/hub/checkpoints/
 ## Diffusion
 
 By default IOPaint will download diffusion model to `~/.cache/huggingface/hub/`
+
+Chinese users may experience network issues when downloading models from huggingface. 
+You can try using the [hf-mirror](https://hf-mirror.com/) source to download. 
+The usage is as follows, add the environment variable when launching iopaint:.
+
+```bash
+HF_ENDPOINT=https://hf-mirror.com iopaint start
+```
