@@ -32,11 +32,27 @@ Double click `win_config.bat`, and you can config all command line args in web U
 
 Assume two GPUs, and you want to use second one, add `SET CUDA_VISIBLE_DEVICES=1` before IOPaint start in [win_start.bat](https://github.com/Sanster/IOPaint/blob/main/scripts/user_scripts/win_start.bat)
 
-## windows installer error
+## windows installer error 1
 
 ![window-installer-change-folder](../public/window-installer-change-folder.png)
 
 This is caused by moving the directory after unpacking zip.
+
+## windows installer error 2
+
+Error message when run `win_config.bat`:
+
+```bash
+ValueError: When localhost is not accessible, a shareable link must be created. Please set share=True or check your
+proxy settings to allow access to localhost.
+```
+
+Add `set no_proxy=localhost, 127.0.0.1, ::1` line to `win_config.bat` file
+
+```bash
+set no_proxy=localhost, 127.0.0.1, ::1
+@call iopaint start-web-config --config-file %0\..\installer_config.json
+```
 
 ## m1/m2 chip error: illegal hardware instruction
 
