@@ -1,5 +1,7 @@
 {
     "powerpaint": "PowerPaint",
+    "powerpaint_v2": "PowerPaint V2",
+    "brushnet": "BrushNet",
     "anytext": "AnyText",
     "instruct_pix2pix": "InstructPix2Pix",
     "paint_by_example": "PaintByExample",

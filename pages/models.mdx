@@ -92,6 +92,10 @@ You may activate the usage of ControlNet within the web interface and select whi
 
 ![ControlNet](../public/controlnet.png)
 
+### PowerPaintV2 and BrushNet
+
+[PowerPaintV2](models/diffusion/powerpaint_v2) and [BrushNet](models/diffusion/brushnet) can turn any sd1.5 model into an inpainting model. 
+
 ### LCM LoRA
 
 https://huggingface.co/docs/diffusers/main/en/using-diffusers/inference_with_lcm_lora
@@ -110,7 +114,7 @@ Match the inpainting result histogram to the source image histogram, it is possi
 
 ## Other Diffusion Models
 
-- [PowerPaint](models/diffusion/powerpaint): With the concept of "learnable task prompts", PowerPaint can achieve specific tasks more effectively. These tasks include text-guided, shape-guided, object-remove, and outpainting.
+- [PowerPaint](models/diffusion/powerpaint): With the concept of "learnable task prompts", PowerPaint can achieve specific image editing tasks more effectively. These tasks include text-guided, shape-guided, object-remove, and outpainting.
 - [AnyText](models/diffusion/anytext): Generate text on images that aligns with the style of the image and the prompt. 
 - [Paint by Example](models/diffusion/paint_by_example): Use an example image to guide the model to generate similar content on the image.
 - [InstructPix2Pix](models/diffusion/instruct_pix2pix): Use a text instruction to edit the picture.
