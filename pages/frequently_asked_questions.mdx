@@ -13,6 +13,22 @@ It may be a permission problem, please change the model save directory use `--mo
 - For installer: Rerun `win_config.bat` will install the newest version of IOPaint
 - For pip: `pip install -U iopaint`
 
+## 'iopaint' is not recognized as an internal or external command
+
+![iopaint_no_command](../public/iopaint_command.jpg)
+
+The error requires manual modification of the `C:\IOPaint-v1\installer\lib\site.py` file (the directory of this file may vary depending on your actual installation path). The modification is around line 173 of the site.py file, changing the following line:
+
+```python
+f = io.TextIOWrapper(io.open_code(fullname), encoding="locale")
+```
+
+To:
+
+```python
+f = io.TextIOWrapper(io.open_code(fullname), encoding="utf-8")
+```
+
 ## Where are models downloaded?
 
 By default, models will be downloaded to the user folder
@@ -86,3 +102,4 @@ This may be fixed by using the command line arguments `--no-half`
 ## How to avoid GPU memory OOM?
 
 See [Memory](https://www.iopaint.com/memory)
+
