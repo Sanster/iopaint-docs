@@ -76,8 +76,8 @@ const config: DocsThemeConfig = {
       />
       <script
         defer
-        src="https://eu.umami.is/script.js"
-        data-website-id="4fceed37-b852-4dd5-93bf-7242a4d5a214"
+        src="/stats/script.js"
+        data-website-id="756bf011-2d5c-4d85-afae-3e4dae7e8bc2"
       ></script>
     </>
   ),
