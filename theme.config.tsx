@@ -1,5 +1,6 @@
 import React from "react"
 import { DocsThemeConfig } from "nextra-theme-docs"
+import MyProjects from "./components/MyProjects"
 
 const logo = (
   <span style={{ fontSize: 20, fontWeight: 700 }}>
@@ -35,6 +36,9 @@ const config: DocsThemeConfig = {
   docsRepositoryBase: "https://github.com/Sanster/IOPaint-docs",
   sidebar: {
     defaultMenuCollapseLevel: 0,
+  },
+  toc: {
+    extraContent: <MyProjects />,
   },
   footer: {
     component: <></>,
